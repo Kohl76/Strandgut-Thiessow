@@ -227,7 +227,15 @@
     }
 
     .photo.one { background-image: url("assets/bilder/haus_concordia.jpg"); }
-    .photo.two { background-image: url("assets/bilder/strandgut.JPG"); min-height: 180px; margin-left: 70px; }
+    .photo.two {
+      background-image: url("assets/bilder/strandgut.JPG");
+      background-size: contain;        /* GANZES Bild sichtbar */
+      background-position: center;
+      background-repeat: no-repeat;
+
+      min-height: 300px;               /* etwas höher für besseres Verhältnis */
+      margin-left: 70px;
+   }
 
     .features {
       display: grid;
